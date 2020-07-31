@@ -1,3 +1,5 @@
+More Details
+Visit https://medium.com/@onexlab.io/cdk-serverless-aurora-e50b456ddd90
 # Welcome to your CDK TypeScript project!
 
 This is a blank project for TypeScript development with CDK.
