@@ -1,0 +1,400 @@
+{
+  "version": "5.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "auroraslsdevAuroraSlsStackB62126AC": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "auroraslsdevAuroraSlsStackB62126AC.template.json"
+      },
+      "metadata": {
+        "/aurora-sls-dev/AuroraSlsStack/Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc8378EB38",
+            "trace": [
+              "new Vpc (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1156:21)",
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:9:17)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcauroraisolatedSubnet1Subnet5370B90B",
+            "trace": [
+              "new Subnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1478:20)",
+              "new PrivateSubnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1730:5)",
+              "availabilityZones.forEach (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:34)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1318:28)",
+              "Vpc.createSubnets (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1313:12)",
+              "new Vpc (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:10)",
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:9:17)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcauroraisolatedSubnet1RouteTableA8F6E99C",
+            "trace": [
+              "new Subnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1495:19)",
+              "new PrivateSubnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1730:5)",
+              "availabilityZones.forEach (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:34)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1318:28)",
+              "Vpc.createSubnets (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1313:12)",
+              "new Vpc (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:10)",
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:9:17)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcauroraisolatedSubnet1RouteTableAssociation78F29BD0",
+            "trace": [
+              "new Subnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1501:5)",
+              "new PrivateSubnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1730:5)",
+              "availabilityZones.forEach (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:34)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1318:28)",
+              "Vpc.createSubnets (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1313:12)",
+              "new Vpc (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:10)",
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:9:17)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcauroraisolatedSubnet2SubnetCB56E2A8",
+            "trace": [
+              "new Subnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1478:20)",
+              "new PrivateSubnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1730:5)",
+              "availabilityZones.forEach (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:34)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1318:28)",
+              "Vpc.createSubnets (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1313:12)",
+              "new Vpc (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:10)",
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:9:17)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcauroraisolatedSubnet2RouteTableBF363B67",
+            "trace": [
+              "new Subnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1495:19)",
+              "new PrivateSubnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1730:5)",
+              "availabilityZones.forEach (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:34)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1318:28)",
+              "Vpc.createSubnets (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1313:12)",
+              "new Vpc (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:10)",
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:9:17)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcauroraisolatedSubnet2RouteTableAssociation6AF59412",
+            "trace": [
+              "new Subnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1501:5)",
+              "new PrivateSubnet (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1730:5)",
+              "availabilityZones.forEach (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1346:34)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1318:28)",
+              "Vpc.createSubnets (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1313:12)",
+              "new Vpc (/Users/munishkapoor/aurora-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:10)",
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:9:17)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/VpcSubnetIds": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcSubnetIds",
+            "trace": [
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:24:5)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/VpcDefaultSecurityGroup": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcDefaultSecurityGroup",
+            "trace": [
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:29:5)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/AuroraSubnetGroup": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuroraSubnetGroup",
+            "trace": [
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:34:45)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/AuroraServerlessCdk": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuroraServerlessCdk",
+            "trace": [
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:41:20)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/aurora-sls-dev/AuroraSlsStack/AuroraClusterArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuroraClusterArn",
+            "trace": [
+              "new AuroraSlsStack (/Users/munishkapoor/aurora-cdk/lib/aurora-cdk-stack.ts:67:5)",
+              "new AuroraCdkStack (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:18:7)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/bin/aurora-cdk.ts:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Module.m._compile (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "main (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/munishkapoor/aurora-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:816:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:827:10)",
+              "Module.load (internal/modules/cjs/loader.js:685:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:620:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:877:12)",
+              "findNodeScript.then.existing (/Users/munishkapoor/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.55.0",
+      "@aws-cdk/cx-api": "1.55.0",
+      "@aws-cdk/cloud-assembly-schema": "1.55.0",
+      "@aws-cdk/aws-ec2": "1.55.0",
+      "@aws-cdk/aws-iam": "1.55.0",
+      "@aws-cdk/region-info": "1.55.0",
+      "@aws-cdk/aws-kms": "1.55.0",
+      "@aws-cdk/aws-ssm": "1.55.0",
+      "@aws-cdk/aws-logs": "1.55.0",
+      "@aws-cdk/aws-cloudwatch": "1.55.0",
+      "@aws-cdk/aws-s3": "1.55.0",
+      "@aws-cdk/aws-events": "1.55.0",
+      "@aws-cdk/aws-rds": "1.55.0",
+      "@aws-cdk/aws-secretsmanager": "1.55.0",
+      "@aws-cdk/aws-lambda": "1.55.0",
+      "@aws-cdk/aws-codeguruprofiler": "1.55.0",
+      "@aws-cdk/aws-sqs": "1.55.0",
+      "@aws-cdk/aws-s3-assets": "1.55.0",
+      "@aws-cdk/assets": "1.55.0",
+      "@aws-cdk/aws-sam": "1.55.0",
+      "jsii-runtime": "node.js/v11.15.0"
+    }
+  }
+}

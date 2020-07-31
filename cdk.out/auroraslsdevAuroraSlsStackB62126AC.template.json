@@ -1,0 +1,242 @@
+{
+  "Resources": {
+    "Vpc8378EB38": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "aurora-sls-dev/AuroraSlsStack/Vpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/Vpc/Resource"
+      }
+    },
+    "VpcauroraisolatedSubnet1Subnet5370B90B": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/17",
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "aurora_isolated_"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Isolated"
+          },
+          {
+            "Key": "Name",
+            "Value": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet1/Subnet"
+      }
+    },
+    "VpcauroraisolatedSubnet1RouteTableA8F6E99C": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet1/RouteTable"
+      }
+    },
+    "VpcauroraisolatedSubnet1RouteTableAssociation78F29BD0": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "VpcauroraisolatedSubnet1RouteTableA8F6E99C"
+        },
+        "SubnetId": {
+          "Ref": "VpcauroraisolatedSubnet1Subnet5370B90B"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet1/RouteTableAssociation"
+      }
+    },
+    "VpcauroraisolatedSubnet2SubnetCB56E2A8": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.128.0/17",
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "aurora_isolated_"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Isolated"
+          },
+          {
+            "Key": "Name",
+            "Value": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet2/Subnet"
+      }
+    },
+    "VpcauroraisolatedSubnet2RouteTableBF363B67": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet2/RouteTable"
+      }
+    },
+    "VpcauroraisolatedSubnet2RouteTableAssociation6AF59412": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "VpcauroraisolatedSubnet2RouteTableBF363B67"
+        },
+        "SubnetId": {
+          "Ref": "VpcauroraisolatedSubnet2SubnetCB56E2A8"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/Vpc/aurora_isolated_Subnet2/RouteTableAssociation"
+      }
+    },
+    "AuroraSubnetGroup": {
+      "Type": "AWS::RDS::DBSubnetGroup",
+      "Properties": {
+        "DBSubnetGroupDescription": "Subnet group to access aurora",
+        "SubnetIds": [
+          {
+            "Ref": "VpcauroraisolatedSubnet1Subnet5370B90B"
+          },
+          {
+            "Ref": "VpcauroraisolatedSubnet2SubnetCB56E2A8"
+          }
+        ],
+        "DBSubnetGroupName": "aurora-sls-subnet-group"
+      },
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/AuroraSubnetGroup"
+      }
+    },
+    "AuroraServerlessCdk": {
+      "Type": "AWS::RDS::DBCluster",
+      "Properties": {
+        "Engine": "aurora",
+        "DatabaseName": "dbname",
+        "DBClusterIdentifier": "aurora-sls",
+        "DBSubnetGroupName": "aurora-sls-subnet-group",
+        "EngineMode": "serverless",
+        "MasterUsername": "masteruser",
+        "MasterUserPassword": "IT_IS_SMART_TO_GENERATE_AND_OUTPUT_THIS",
+        "Port": 3306,
+        "ScalingConfiguration": {
+          "AutoPause": true,
+          "MaxCapacity": 2,
+          "MinCapacity": 2,
+          "SecondsUntilAutoPause": 3600
+        }
+      },
+      "DependsOn": [
+        "AuroraSubnetGroup"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "aurora-sls-dev/AuroraSlsStack/AuroraServerlessCdk"
+      }
+    }
+  },
+  "Outputs": {
+    "VpcSubnetIds": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "[\"",
+            {
+              "Ref": "VpcauroraisolatedSubnet1Subnet5370B90B"
+            },
+            "\",\"",
+            {
+              "Ref": "VpcauroraisolatedSubnet2SubnetCB56E2A8"
+            },
+            "\"]"
+          ]
+        ]
+      }
+    },
+    "VpcDefaultSecurityGroup": {
+      "Value": {
+        "Fn::GetAtt": [
+          "Vpc8378EB38",
+          "DefaultSecurityGroup"
+        ]
+      }
+    },
+    "AuroraClusterArn": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:rds:ap-southeast-1:",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":cluster:aurora-sls"
+          ]
+        ]
+      },
+      "Export": {
+        "Name": "aurora-sls-dev"
+      }
+    }
+  }
+}
